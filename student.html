@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ученик</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Империя</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="applications.html">Заявки <span class="badge">42</span></a></li>
+            <li class="active"><a href="students.html">Ученики <span class="sr-only">(current)</span></a></li>
+            <li><a href="groups.html">Группы</a></li>
+            <li><a href="subjects.html">Курсы</a></li>
+            <li><a href="settings.html">Настройки</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Имя Фамилия <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <main class="main">
+      <div class="container">
+        <div class="alert alert-default cleatfix">
+          <span class="float-left">Пользователь оплатил заявлку по предмету <strong>История</strong>. Распределите его в группу</span>
+          <a href="#" class="btn btn-primary float-right">Перейти к распределнию</a>
+        </div>
+
+        <form class="">
+          <fieldset>
+            <div class="row">
+              <div class="col-xs-9">
+                <input type="text" name="" value="">
+
+                <label for="">Характеристика</label>
+                <input type="text" name="" value="">
+              </div>
+              <div class="col-xs-3">
+                <select class="" name="">
+                  <option value="">Пользователь</option>
+                  <option value="">Администратор</option>
+                </select>
+              </div>
+              <div class="col-xs-12">
+                <button type="button" name="button" class="btn btn-primary">Применить</button>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th class="applications h3">Заявки</th>
+                  <th class="status">Статус</th>
+                  <th class="test">Тест, баллов</th>
+                  <th class="payments">Оплачено занятий</th>
+                  <th class="group">Программа и группа</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="applications"><a href="">История</a></td>
+                  <td class="status"><span class="label label-primary">Тест пройден</span></td>
+                  <td class="test"><span class="label label-primary">60 / 100</span></td>
+                  <td class="payments"><span class="label label-primary">10 / 10</span></td>
+                  <td class="group">Не выбрана</td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+
+          <fieldset>
+            <div class="alert alert-info">Ученик был приглашен <a href="#">Имя Фамилия</a></div>
+
+            <div class="alert alert-info">
+              Участник пригласил:
+              <span>44 зарегистрировались </span>
+              <span>12 прошли тест </span>
+              <span>6 оставили данные </span>
+              <span>3 оплатили </span>
+            </div>
+
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th class="students">Приглашенные</th>
+                  <th class="group">Курс и группа</th>
+                  <th class="status">Статус</th>
+                  <th class="payments-sum">Сумма</th>
+                  <th class="bonus">Бонус</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="students"><a href="">Имя Фамилия</a></td>
+                  <td class="group"><a href="">История — И17</a></td>
+                  <td class="status"><span class="label label-primary">Авторизован</span></td>
+                  <td class="payments-sum">0</td>
+                  <td class="bonus">0</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th class="students"> </th>
+                  <th class="group"> </th>
+                  <th class="status"> </th>
+                  <th class="payments-sum">Сумма выплат</th>
+                  <th class="bonus">500 Р</th>
+                </tr>
+              </tfoot>
+            </table>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

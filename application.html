@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Заявка</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Империя</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="applications.html">Заявки <span class="sr-only">(current)</span> <span class="badge">42</span></a></li>
+            <li><a href="students.html">Ученики</a></li>
+            <li><a href="groups.html">Группы</a></li>
+            <li><a href="subjects.html">Курсы</a></li>
+            <li><a href="settings.html">Настройки</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Имя Фамилия <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <main class="main">
+      <div class="container">
+        <h1>Заявка</h1>
+
+        <form class="" action=" " method="post">
+          <fieldset>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <label for="">Фамилия Имя Отчество</label>
+                <input type="text" name="" value="">
+              </div>
+
+              <div class="col-xs-12 col-sm-3">
+                <h6>Дата регистрации</h6>
+                <span class="label label-default">Вчера — 14:00</span>
+              </div>
+
+              <div class="col-xs-12 col-sm-3">
+                <h6>Реферал</h6>
+                <span class="label label-default"><a href="#">Муравьев Иннокентий</a></span>
+              </div>
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-3">
+                <label for="">Статус</label>
+                <select class="" name="">
+                  <option value="">Ждет распределения</option>
+                </select>
+              </div>
+
+              <div class="col-xs-12 col-sm-3">
+                <label for="">Телефон</label>
+                <input type="text" name="" value="">
+              </div>
+
+              <div class="col-xs-12 col-sm-3">
+                <label for="">Почта</label>
+                <input type="text" name="" value="">
+              </div>
+
+              <div class="col-xs-12 col-sm-3">
+                <label for="">Адрес ВК</label>
+                <input type="text" name="" value="">
+              </div>
+            </div><!-- /.row -->
+          </fieldset>
+
+          <fieldset class="block">
+            <div class="row">
+              <div class="col-xs-12 col-sm-3">
+                <label for="">Предмет и курс</label>
+                <select class="" name="">
+                  <option value="">История на 100</option>
+                </select>
+              </div>
+
+              <div class="col-xs-12 col-sm-3">
+                <label for="">Баллов за тест</label>
+                <input type="text" name="" value="">
+              </div>
+
+              <div class="col-xs-12 col-sm-3">
+                <label for="">Группа <span class="label label-primary">Нужно распределнить</span></label>
+                <select class="" name="">
+                  <option value="">История на 100</option>
+                </select>
+              </div>
+
+              <div class="col-xs-12 col-sm-3">
+                <label for="">Оплачено занятий</label>
+                <div class="row">
+                  <div class="col-xs-5">
+                    <input type="text" name="" value="">
+                  </div>
+                  <div class="col-xs-7">
+                    <input type="text" name="" value="">
+                  </div>
+                </div><!-- /.row -->
+              </div>
+            </div><!-- /.row -->
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <label for="">Удобые дни</label>
+                <select multiple>
+                  <option>Понедельник — любое время</option>
+                  <option>Понедельник — любое время</option>
+                  <option>Понедельник — любое время</option>
+                  <option>Понедельник — любое время</option>
+                </select>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <label for="">Комментарий</label>
+                <textarea name="name" rows="8" cols="80"></textarea>
+              </div>
+
+              <div class="col-xs-12">
+                <button type="button" name="button" class="btn btn-primary">Смотреть результаты теста</button>
+              </div>
+            </div><!-- /.row -->
+          </fieldset>
+
+          <button type="button" name="button" class="btn btn-primary">Применить</button>
+        </form>
+      </div><!-- /.container -->
+    </main>
+  </body>
+</html>

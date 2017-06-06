@@ -1,0 +1,9 @@
+label,
+input,
+fieldset,
+select {
+  display: block;
+  width: 100%; }
+
+fieldset {
+  margin-bottom: 30px; }
