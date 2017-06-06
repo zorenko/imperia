@@ -47,9 +47,9 @@
 
     <main class="main">
       <div class="container">
-        <h1>Заявка</h1>
+        <h1 class="h1">Заявка</h1>
 
-        <form class="" action=" " method="post">
+        <form class="form form--application" action="" method="post">
           <fieldset>
             <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -57,21 +57,21 @@
                 <input class="form-control" type="text" name="" value="">
               </div>
 
-              <div class="col-xs-12 col-sm-3">
-                <h6>Дата регистрации</h6>
-                <span class="label label-default">Вчера — 14:00</span>
+              <div class="col-xs-12 col-sm-3 registry-date">
+                <label>Дата регистрации</label>
+                <span class="label label-default label-xl">Вчера — 14:00</span>
               </div>
 
-              <div class="col-xs-12 col-sm-3">
-                <h6>Реферал</h6>
-                <span class="label label-default"><a href="#">Муравьев Иннокентий</a></span>
+              <div class="col-xs-12 col-sm-3 referral">
+                <label>Реферал</label>
+                <span class="label label-default label-xl"><a href="#">Муравьев Иннокентий</a></span>
               </div>
             </div><!-- /.row -->
 
             <div class="row">
               <div class="col-xs-12 col-sm-3">
                 <label for="">Статус</label>
-                <select class="" name="">
+                <select class="form-control" name="">
                   <option value="">Ждет распределения</option>
                 </select>
               </div>
@@ -97,7 +97,7 @@
             <div class="row">
               <div class="col-xs-12 col-sm-3">
                 <label for="">Предмет и курс</label>
-                <select class="" name="">
+                <select class="form-control" name="">
                   <option value="">История на 100</option>
                 </select>
               </div>
@@ -108,8 +108,8 @@
               </div>
 
               <div class="col-xs-12 col-sm-3">
-                <label for="">Группа <span class="label label-primary">Нужно распределнить</span></label>
-                <select class="" name="">
+                <label for="">Группа <span class="label label-warning pull-right">Нужно распределнить</span></label>
+                <select class="form-control" name="">
                   <option value="">История на 100</option>
                 </select>
               </div>
@@ -130,7 +130,9 @@
             <div class="row">
               <div class="col-xs-12 col-sm-6">
                 <label for="">Удобые дни</label>
-                <select multiple>
+                <select multiple class="form-control">
+                  <option>Понедельник — любое время</option>
+                  <option>Понедельник — любое время</option>
                   <option>Понедельник — любое время</option>
                   <option>Понедельник — любое время</option>
                   <option>Понедельник — любое время</option>
@@ -140,11 +142,11 @@
 
               <div class="col-xs-12 col-sm-6">
                 <label for="">Комментарий</label>
-                <textarea name="name" rows="8" cols="80"></textarea>
+                <textarea name="name" rows="8" cols="80" class="form-control"></textarea>
               </div>
 
               <div class="col-xs-12">
-                <button type="button" name="button" class="btn btn-primary">Смотреть результаты теста</button>
+                <button type="button" name="button" class="btn btn-default">Смотреть результаты теста</button>
               </div>
             </div><!-- /.row -->
           </fieldset>

@@ -47,40 +47,58 @@
 
     <main class="main">
       <div class="container">
-        <h1 class="h1">Редактирование вопроса теста</h1>
+        <h1>Редактирование вопроса теста</h1>
         <span class="separator"></span>
 
         <form class="" action="" method="post">
           <fieldset>
             <label for="">Название</label>
-            <input class="form-control" type="text" name="" value="">
+            <input class="form-control" type="text" name="" value="История">
           </fieldset>
 
           <fieldset>
-            <table class="table">
+            <table class="table table-hover table--subject">
               <thead>
                 <tr>
                   <th class="questions h3">
                     Вопросы теста
-                    <button type="button" name="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+                    <button type="button" name="button" class="btn btn-default btn-add"><span class="glyphicon glyphicon-plus"></span></button>
                   </th>
-                  <th class="var">Группы</th>
-                  <th class="check">Тест</th>
+                  <th class="var">Варианты</th>
+                  <th class="check">Проверка</th>
                   <th class="drag"> </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td class="questions">
-                    <span>1</span>
+                    <span class="number">1</span>
                     Расположите в хронологической последовательности исторические
                   </td>
                   <td class="var">
-                    <input class="form-control" type="checkbox" name="" value="">
+                    <input type="checkbox" name="" value="">
                     <label for=""></label>
                   </td>
                   <td class="check">
-                    <input class="form-control" type="checkbox" name="" value="">
+                    <input type="checkbox" name="" value="">
+                    <label for=""></label>
+                  </td>
+                  <td class="drag">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="questions">
+                    <span class="number">1</span>
+                    Расположите в хронологической последовательности исторические
+                  </td>
+                  <td class="var">
+                    <input type="checkbox" name="" value="">
+                    <label for=""></label>
+                  </td>
+                  <td class="check">
+                    <input type="checkbox" name="" value="">
                     <label for=""></label>
                   </td>
                   <td class="drag">
@@ -93,11 +111,11 @@
 
           <fieldset>
             <label for="">Инструкция к тесту</label>
-            <textarea name="name" rows="8" cols="80"></textarea>
+            <textarea name="name" rows="8" cols="80" class="form-control"></textarea>
           </fieldset>
 
           <button type="button" name="button" class="btn btn-primary">Сохранить</button>
-          <button type="button" name="button" class="btn btn-default">Удалить курс</button>
+          <button type="button" name="button" class="btn btn-default pull-right">Удалить курс</button>
         </form>
       </div>
     </main>

@@ -1,0 +1,10 @@
+.alert {
+  padding: 10px 15px;
+  line-height: 3;
+  float: none;
+
+  .btn,
+  &__content {
+    margin-left: 20px;
+  }
+}

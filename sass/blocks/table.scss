@@ -10,36 +10,59 @@
 .table {
 
   tbody {
-    .empty {
+    .muted {
       color: rgba(#000, .4);
     }
 
     .status {
       width: 10%;
-      .label {
-        display: block;
-      }
-    }
-  }
-
-  &--applications {
-    tbody {
-      .date {
-        color: rgba(#000, .4);
-      }
-    }
-  }
-
-  &--students {
-    td {
-      width: 20%;
-    }
-    .student {
-      width: 30%
     }
   }
 
   &--groups {
+    td {
+      width: 20%;
+    }
 
+    .date,
+    .places {
+      width: 10%;
+    }
+
+    .comment {
+      width: 30%;
+    }
+  }
+
+  &--subjects {
+    .test-edit {
+      text-align: right;
+    }
+  }
+
+  &--student {
+    .applications,
+    .status,
+    .test,
+    .payments {
+      width: 17%;
+    }
+  }
+
+  &--subject {
+    .questions {
+      width: 50%;
+      overflow: hidden;
+    }
+    .number {
+      display: inline-block;
+      border: 1px solid #dbe0e4;
+      padding: 5px 10px;
+      margin-right: 10px;
+    }
+    .drag {
+      color: grey;
+      cursor: pointer;
+    }
   }
 }

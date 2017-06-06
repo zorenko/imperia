@@ -1,3 +1,8 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
 label,
 input,
 textarea,
@@ -10,7 +15,28 @@ label {
   margin-bottom: 5px; }
 
 fieldset {
-  margin-bottom: 30px; }
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
+select[multiple] {
+  min-height: 156px; }
+
+h1, h2, h3, h4, h5, h6 {
+  float: none; }
+
+.block {
+  padding: 20px 25px;
+  background: #fff;
+  border-radius: 5px; }
+
+.separator {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #dbe0e4;
+  margin: 30px 0; }
 
 .header .navbar {
   margin-bottom: 0; }
@@ -56,18 +82,7 @@ fieldset {
   border-bottom: 3px solid #4FB5DD; }
 
 .main {
-  padding: 50px 0; }
-
-.label-lg {
-  padding: 6px 18px;
-  font-size: 12px; }
-
-.btn-add {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  margin-left: 10px; }
+  padding: 30px 0 50px; }
 
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -77,19 +92,80 @@ fieldset {
 .table > tfoot > tr > td {
   padding: 13px 10px; }
 
-.table tbody .empty {
+.table tbody .muted {
   color: rgba(0, 0, 0, 0.4); }
 
 .table tbody .status {
   width: 10%; }
-  .table tbody .status .label {
-    display: block; }
 
-.table--applications tbody .date {
-  color: rgba(0, 0, 0, 0.4); }
-
-.table--students td {
+.table--groups td {
   width: 20%; }
 
-.table--students .student {
+.table--groups .date,
+.table--groups .places {
+  width: 10%; }
+
+.table--groups .comment {
   width: 30%; }
+
+.table--subjects .test-edit {
+  text-align: right; }
+
+.table--student .applications,
+.table--student .status,
+.table--student .test,
+.table--student .payments {
+  width: 17%; }
+
+.table--subject .questions {
+  width: 50%;
+  overflow: hidden; }
+
+.table--subject .number {
+  display: inline-block;
+  border: 1px solid #dbe0e4;
+  padding: 5px 10px;
+  margin-right: 10px; }
+
+.table--subject .drag {
+  color: grey;
+  cursor: pointer; }
+
+.alert {
+  padding: 10px 15px;
+  line-height: 3;
+  float: none; }
+  .alert .btn, .alert__content {
+    margin-left: 20px; }
+
+.label {
+  display: inline-block; }
+  .label-block {
+    display: block;
+    width: 100%; }
+  .label-lg {
+    padding: 6px 18px;
+    font-size: 12px; }
+  .label-xl {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 2.4;
+    vertical-align: middle;
+    text-align: left;
+    font-weight: normal; }
+    .label-xl a {
+      color: #fff;
+      text-decoration: underline; }
+  .label.pull-right {
+    display: block;
+    margin-top: 2px; }
+
+.btn-add {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin-left: 10px; }

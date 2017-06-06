@@ -47,6 +47,17 @@
 
     <main class="main">
       <form class="container" action="" method="post">
+        <div class="alert alert-success">Информация сохранена <a href="#" class="btn btn-default btn-sm">Вернуться к списку</a></div>
+
+        <div class="alert alert-success">Группа выгружена на платформу. Код ответа: {group: 234, status: 1}</div>
+
+        <div class="alert alert-warning">
+          Действительно удалить?
+          <a href="#" class="btn btn-default btn-sm">Удалить</a>
+          <a href="#" class="btn btn-default btn-sm">Нет, я передумал</a>
+        </div>
+
+        <div class="alert alert-info">Группа удалена</div>
 
         <fieldset>
           <div class="row">
@@ -57,14 +68,14 @@
 
             <div class="col-xs-12 col-sm-4">
               <label for="">Название предмета</label>
-              <select class="" name="">
+              <select class="form-control" name="">
                 <option value="">Базовое общество</option>
               </select>
             </div>
 
             <div class="col-xs-12 col-sm-4">
               <label for="">Статус группы</label>
-              <select class="" name="">
+              <select class="form-control" name="">
                 <option value="">Идет запись</option>
               </select>
             </div>
@@ -123,20 +134,20 @@
             </tbody>
             <tfoot>
               <tr>
-                <td class="student">Всего</td>
-                <td class="payments-sum">4000 Р</td>
-                <td class="classes-paid"> </td>
-                <td class="comment"> </td>
+                <th class="student">Всего</th>
+                <th class="payments-sum">4000 Р</th>
+                <th class="classes-paid"> </th>
+                <th class="comment"> </th>
               </tr>
             </tfoot>
           </table>
         </fieldset>
 
-        <fieldset>
-          <button type="button" name="button" class="btn btn-primary btn-lg">Выгрузить на платформу</button>
+        <fieldset class="block">
+          <button type="button" name="button" class="btn btn-primary">Выгрузить на платформу</button>
         </fieldset>
 
-        <button type="button" name="button" class="btn btn-default">Удалить группу</button>
+        <button type="button" name="button" class="btn btn-default btn-sm">Удалить группу</button>
       </form>
     </main>
   </body>
