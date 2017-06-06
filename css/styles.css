@@ -17043,7 +17043,7 @@ span.CodeMirror-selectedtext {
  *
  * @version
  * 3.0.83 (July 02 2010)
- * 
+ *
  * @copyright
  * Copyright (C) 2004-2010 Alex Gorbatchev.
  *
@@ -20261,7 +20261,7 @@ be a descendant of the grid when it is being dragged.
   height: 30px;
 }
 /*# sourceMappingURL=bootstrap-colorpicker.css.map */
-/*! X-editable - v1.5.1 
+/*! X-editable - v1.5.1
 * In-place editing with Twitter Bootstrap, jQuery UI or pure jQuery
 * http://github.com/vitalets/x-editable
 * Copyright (c) 2013 Vitaliy Potapov; Licensed MIT */
@@ -20277,8 +20277,8 @@ be a descendant of the grid when it is being dragged.
   line-height: 20px;
   /* overwriting bootstrap line-height. See #133 */
 }
-/* 
-  BS3 width:1005 for inputs breaks editable form in popup 
+/*
+  BS3 width:1005 for inputs breaks editable form in popup
   See: https://github.com/vitalets/x-editable/issues/393
 */
 .editableform .form-control {
@@ -20463,7 +20463,7 @@ a.editable-click.editable-disabled:hover {
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
- 
+
 .datepicker {
   padding: 4px;
   -webkit-border-radius: 4px;

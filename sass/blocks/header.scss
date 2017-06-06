@@ -1,0 +1,22 @@
+.header {
+  .navbar {
+    margin-bottom: 0;
+  }
+
+  .navbar-nav {
+    width: auto;
+  }
+
+  .navbar-nav > li {
+    width: auto;
+  }
+
+  .navbar-nav > li > a {
+    padding: 12px 20px;
+    line-height: 2;
+  }
+
+  .navbar-default .navbar-brand {
+    color: #000;
+  }
+}

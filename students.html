@@ -9,44 +9,50 @@
     <link rel="stylesheet" href="css/custom.css">
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Империя</a>
-        </div>
+    <header class="header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-education"></span> Империя</a>
+          </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="applications.html">Заявки <span class="badge">42</span></a></li>
-            <li class="active"><a href="students.html">Ученики <span class="sr-only">(current)</span></a></li>
-            <li><a href="groups.html">Группы</a></li>
-            <li><a href="subjects.html">Курсы</a></li>
-            <li><a href="settings.html">Настройки</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Имя Фамилия <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-    </nav>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="applications.html">Заявки <span class="badge">42</span></a></li>
+              <li class="active"><a href="students.html">Ученики <span class="sr-only">(current)</span></a></li>
+              <li><a href="groups.html">Группы</a></li>
+              <li><a href="subjects.html">Курсы</a></li>
+              <li><a href="settings.html">Настройки</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Имя Фамилия <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+    </header>
 
     <section class="subheader">
       <div class="container">
         <h1>Ученики</h1>
+      </div>
+    </section>
 
+    <section class="subheader-nav">
+      <div class="container">
         <ul class="nav nav-tabs">
           <li role="presentation" class="active"><a href="students.html">Все <span class="badge">42</span></a></li>
           <li role="presentation"><a href="partners.html">Партнеры <span class="badge">42</span></a></li>
@@ -56,7 +62,7 @@
 
     <main class="main">
       <div class="container">
-        <table class="table table-hover">
+        <table class="table table-hover table--students">
           <thead>
             <tr>
               <th class="name">Имя ученика</th>
@@ -68,11 +74,33 @@
           </thead>
           <tbody>
             <tr>
-              <td class="name"><a href="">Имя Фамилия</a></td>
-              <td class="subject">История</td>
+              <td class="name"><a href="">Константин Константинопольский</a></td>
+              <td class="subject">
+                <span class="subject-item">История</span>
+              </td>
               <td class="phone">+7 911 111 11 11</td>
               <td class="email">example@mail.com</td>
-              <td class="status"><span class="label label-primary">Ученик</span></td>
+              <td class="status"><span class="label label-primary label-lg">Ученик</span></td>
+            </tr>
+
+            <tr>
+              <td class="name"><a href="">Имя Фамилия</a></td>
+              <td class="subject">
+                <span class="item">История</span>
+                <span class="item">Обществознание</span>
+                <span class="item">География</span>
+              </td>
+              <td class="phone">+7 911 111 11 11</td>
+              <td class="email">example@mail.com</td>
+              <td class="status"><span class="label label-info label-lg">Заявка</span></td>
+            </tr>
+
+            <tr>
+              <td class="name"><a href="">Имя Фамилия</a></td>
+              <td class="subject empty">Нет</td>
+              <td class="phone">+7 911 111 11 11</td>
+              <td class="email empty">Нет</td>
+              <td class="status"><span class="label label-default label-lg">Тест</span></td>
             </tr>
           </tbody>
         </table>

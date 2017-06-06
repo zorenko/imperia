@@ -1,9 +1,95 @@
 label,
 input,
-fieldset,
+textarea,
 select {
   display: block;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
+
+label {
+  margin-bottom: 5px; }
 
 fieldset {
   margin-bottom: 30px; }
+
+.header .navbar {
+  margin-bottom: 0; }
+
+.header .navbar-nav {
+  width: auto; }
+
+.header .navbar-nav > li {
+  width: auto; }
+
+.header .navbar-nav > li > a {
+  padding: 12px 20px;
+  line-height: 2; }
+
+.header .navbar-default .navbar-brand {
+  color: #000; }
+
+.subheader {
+  padding: 30px 0 10px;
+  background: #f8f8f8; }
+
+.subheader-nav {
+  padding: 0;
+  background: #f8f8f8; }
+
+.nav-tabs {
+  border-bottom: none; }
+  .nav-tabs > li > a {
+    padding: 10px 20px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 3px solid transparent; }
+    .nav-tabs > li > a:hover {
+      background: none;
+      border-bottom-color: #4FB5DD; }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav.nav-tabs > li.active > a {
+  background: none;
+  border: none;
+  border-bottom: 3px solid #4FB5DD; }
+
+.main {
+  padding: 50px 0; }
+
+.label-lg {
+  padding: 6px 18px;
+  font-size: 12px; }
+
+.btn-add {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin-left: 10px; }
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 13px 10px; }
+
+.table tbody .empty {
+  color: rgba(0, 0, 0, 0.4); }
+
+.table tbody .status {
+  width: 10%; }
+  .table tbody .status .label {
+    display: block; }
+
+.table--applications tbody .date {
+  color: rgba(0, 0, 0, 0.4); }
+
+.table--students td {
+  width: 20%; }
+
+.table--students .student {
+  width: 30%; }
