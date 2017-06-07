@@ -45,116 +45,140 @@
       </nav>
     </header>
 
-    <main class="main">
+    <main class="main main--question">
       <form class="container" action="" method="post">
         <h1>Редактирование вопроса теста</h1>
         <span class="separator"></span>
 
-        <div class="row">
-          <div class="col-xs-12 col-sm-9">
-            <label for="">Текст вопроса</label>
-            <input class="form-control" type="text" name="" value="">
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <div class="row">
-              <div class="col-xs-6">
-                <label for="">Макс. баллов</label>
-              </div>
-              <div class="col-xs-6">
-                <input class="form-control" type="text" name="" value="">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6">
-                <label for="">Номер вопроса</label>
-              </div>
-              <div class="col-xs-6">
-                <input class="form-control" type="text" name="" value="">
-              </div>
-            </div>
-          </div>
-        </div><!-- .row -->
-
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <label for="">Верстка вариантов ответа</label>
-
-            <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="students.html">Просмотр</a></li>
-              <li role="presentation"><a href="partners.html">Код</a></li>
-            </ul>
-
-            <div class="">
-              <h6>Что из перечисленного относится к правлению Александра I?</h6>
-
-              <input type="checkbox" name="" value="" id="var1">
-              <label for="">указ о вольных хлебопашцах</label>
-
-              <input type="checkbox" name="" value="" id="var1" сhecked>
-              <label for="">указ о вольных хлебопашцах</label>
-
-              <input type="checkbox" name="" value="" id="var1">
-              <label for="">указ о вольных хлебопашцах</label>
-
-              <input type="checkbox" name="" value="" id="var1">
-              <label for="">указ о вольных хлебопашцах</label>
-
-              <input type="checkbox" name="" value="" id="var1">
-              <label for="">указ о вольных хлебопашцах</label>
-            </div>
-
-            <textarea name="name" rows="8" cols="80" class="hidden"></textarea>
-          </div>
-
-          <div class="col-xs-12 col-sm-6">
-            <label for="">Проверка ответа</label>
-            <a href="#">Показать примеры и подсказки</a>
-            <textarea name="name" rows="8" cols="80" class="form-control"></textarea>
-          </div>
-
-          <div class="col-xs-12">
-            <button type="button" name="button" class="btn btn-primary">Сохранить</button>
-          </div>
-        </div><!-- .row -->
-
-        <div class="row">
-          <div class="col-xs-12 col-sm-8">
-            <label for="" class="h3">Предпросмотр</label>
-
-            <button type="button" name="button" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span> Обновить</button>
-
-            <div class="">
-              <h6>Что из перечисленного относится к правлению Александра I?</h6>
-
-              <input type="checkbox" name="" value="" id="var1">
-              <label for="">указ о вольных хлебопашцах</label>
-
-              <input type="checkbox" name="" value="" id="var1" сhecked>
-              <label for="">указ о вольных хлебопашцах</label>
-
-              <input type="checkbox" name="" value="" id="var1">
-              <label for="">указ о вольных хлебопашцах</label>
-
-              <input type="checkbox" name="" value="" id="var1">
-              <label for="">указ о вольных хлебопашцах</label>
-
-              <input type="checkbox" name="" value="" id="var1">
-              <label for="">указ о вольных хлебопашцах</label>
+        <fieldset>
+          <div class="row">
+            <div class="col-xs-12">
+              <label for="">Текст вопроса</label>
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-4">
-            <h6 class="text-center">Результат</h6>
+          <div class="row">
+            <div class="col-xs-12 col-sm-10">
+              <input class="form-control input--question-text" type="text" name="" value="">
+            </div>
+            <div class="col-xs-12 col-sm-2">
+              <div class="row">
+                <div class="col-xs-6">
+                  <label for="">Макс. баллов</label>
+                </div>
+                <div class="col-xs-6">
+                  <input class="form-control" type="text" name="" value="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  <label for="">Номер вопроса</label>
+                </div>
+                <div class="col-xs-6">
+                  <input class="form-control" type="text" name="" value="">
+                </div>
+              </div>
+            </div>
+          </div><!-- .row -->
+        </fieldset>
 
-            <span>3 балла из 4</span>
+        <fieldset>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
 
-            <button type="button" name="button" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> Проверить</button>
+              <div class="clearfix fieldset__header">
+                <label for="" class="pull-left">Верстка вариантов ответа</label>
+
+                <ul class="nav nav-tabs pull-right">
+                  <li role="presentation" class="active"><a href="students.html">Просмотр</a></li>
+                  <li role="presentation"><a href="partners.html">Код</a></li>
+                </ul>
+              </div>
+
+              <div class="block block--border">
+                <h6>Что из перечисленного относится к правлению Александра I?</h6>
+
+                <input type="checkbox" name="" value="" id="var1">
+                <label for="var1">указ о вольных хлебопашцах</label>
+
+                <input type="checkbox" name="" value="" id="var2" checked>
+                <label for="var2">указ о вольных хлебопашцах</label>
+
+                <input type="checkbox" name="" value="" id="var3">
+                <label for="var3">указ о вольных хлебопашцах</label>
+
+                <input type="checkbox" name="" value="" id="var4">
+                <label for="var4">указ о вольных хлебопашцах</label>
+
+                <input type="checkbox" name="" value="" id="var5">
+                <label for="var5">указ о вольных хлебопашцах</label>
+              </div>
+
+              <textarea name="name" rows="8" cols="80" class="hidden form-control"></textarea>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+
+              <div class="clearfix fieldset__header">
+                <label for="" class="pull-left">Проверка ответа</label>
+                <a href="#" class="pull-right">Показать примеры и подсказки</a>
+              </div>
+
+              <textarea name="name" rows="8" cols="80" class="form-control"></textarea>
+            </div>
+
+            <div class="col-xs-12">
+              <button type="button" name="button" class="btn btn-primary">Сохранить</button>
+            </div>
+          </div><!-- .row -->
+        </fieldset>
+
+        <fieldset>
+          <div class="row">
+            <div class="col-xs-12 col-sm-8">
+              <div class="fieldset__header clearfix">
+                <label for="" class="h4 pull-left">Предпросмотр</label>
+
+                <button type="button" name="button" class="btn btn-default pull-right"><span class="glyphicon glyphicon-refresh"></span> Обновить</button>
+              </div>
+            </div>
           </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-8">
+              <div class="block block--border">
+                <h6>Что из перечисленного относится к правлению Александра I?</h6>
 
-          <div class="col-xs-12">
+                <input type="checkbox" name="" value="" id="var1">
+                <label for="">указ о вольных хлебопашцах</label>
 
-          </div>
-        </div><!-- .row -->
+                <input type="checkbox" name="" value="" id="var1" сhecked>
+                <label for="">указ о вольных хлебопашцах</label>
+
+                <input type="checkbox" name="" value="" id="var1">
+                <label for="">указ о вольных хлебопашцах</label>
+
+                <input type="checkbox" name="" value="" id="var1">
+                <label for="">указ о вольных хлебопашцах</label>
+
+                <input type="checkbox" name="" value="" id="var1">
+                <label for="">указ о вольных хлебопашцах</label>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 block block--results">
+              <div>
+                <h6 class="text-center">Результат</h6>
+                <span class="text-center h3">3 балла из 4</span>
+              </div>
+
+              <button type="button" name="button" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> Проверить</button>
+            </div>
+
+            <div class="col-xs-12">
+
+            </div>
+          </div><!-- .row -->
+        </fieldset>
 
       </form><!-- .container -->
     </main>

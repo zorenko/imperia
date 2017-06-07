@@ -1,3 +1,74 @@
 .main {
   padding: 30px 0 50px;
+
+  &--question {
+    input[type=checkbox] {
+      display: none;
+    }
+
+    input[type=checkbox]+label {
+      position: relative;
+      padding: 10px 0;
+      padding-left: 50px;
+
+      &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 28px;
+        height: 28px;
+        top: 50%;
+        left: 0;
+        margin-top: -14px;
+        border: 1px solid #dbe0e4;
+        border-radius: 3px;
+      }
+
+      &:hover {
+        &:after {
+          background: $info;
+          border-color: $info;
+        }
+      }
+    }
+
+    input[type=checkbox]:checked+label {
+      &:after {
+        background: $info;
+        border-color: $info;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 18px;
+        height: 18px;
+        top: 50%;
+        left: 5px;
+        margin-top: -9px;
+        background-image: url("../img/icon-check.svg");
+        background-size: 18px 18px;
+        background-position: center;
+        z-index: 1;
+      }
+    }
+
+    .fieldset__header {
+      .pull-left,
+      .pull-right {
+        width: auto;
+      }
+
+      >label,
+      >a {
+        padding: 10px 0;
+        margin: 0;
+      }
+
+      .btn {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

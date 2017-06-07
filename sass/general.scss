@@ -17,6 +17,10 @@ label {
   margin-bottom: 5px;
 }
 
+.input--question-text {
+  min-height: 100px;
+}
+
 fieldset {
   display: block;
   width: 100%;
@@ -28,14 +32,9 @@ select[multiple] {
   min-height: 156px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+ul, ol {
   float: none;
-}
-
-.block {
-  padding: 20px 25px;
-  background: #fff;
-  border-radius: 5px;
 }
 
 .separator {

@@ -1,0 +1,22 @@
+.block {
+  padding: 20px 25px;
+  background: #fff;
+  border-radius: 3px;
+
+  &--border {
+    padding: 20px 25px;
+    border: 1px solid #dbe0e4;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+
+  &--results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 250px;
+    background: #dbe0e4;
+  }
+}
